@@ -1,0 +1,15 @@
+
+a {
+    color: var(--color-letra-header);
+margin: 0 
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center !important;
+}

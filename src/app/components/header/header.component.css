@@ -1,0 +1,51 @@
+.header-area {
+    background-image: url(../../../assets/img/header-background.jpg);
+    background-size: cover;
+    background-position: 10px;
+    height: 100%;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+hr {
+    margin: 20px 40px !important;
+}
+
+app-boton-login {
+    display: none;
+}
+
+.header-responsive {
+    text-align: start;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+
+@media (min-width: 1000px) {
+    .fixed-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        background-color: transparent;
+        padding: 50px; 
+        padding-top: 10px;  
+        padding-bottom: 99%;
+    }
+}
+@media (max-width: 1000px) {
+    app-boton-login {
+        display: block;
+        align-self: center;
+        padding: 0;
+    }
+
+    .header-responsive {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+}

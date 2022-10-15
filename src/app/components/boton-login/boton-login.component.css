@@ -1,0 +1,24 @@
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+
+.btn-secondary {
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .login {
+        padding-top: 0 !important;
+        padding-right: 5px !important;
+    
+    }
+
+    
+}
+
+
+

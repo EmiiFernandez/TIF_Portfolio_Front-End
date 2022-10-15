@@ -1,0 +1,38 @@
+<div class="border-seccion">
+    <h4 id="list-item-3">Educación</h4>
+  
+    <div class="col-lg-6">
+      <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">
+        Agregar nueva educación
+      </button>
+    </div>
+  
+    <hr />
+  
+    <div *ngFor="let Educacion of educacion">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{ Educacion.nombreE }}</h5>
+  
+          <img src="../../../assets/img/Screen portfolio.png" class="d-block w-100" alt="..." />
+  
+          <p class="card-text">{{ Educacion.descripcionE }}</p>
+        </div>
+  
+        <div class="card-footer text-muted">Link?</div>
+  
+      </div>
+  
+      <div *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+          <i class="fa-regular fa-pen-to-square"></i> EDITAR
+        </button>
+      </div>
+  
+      <div *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+          <i class="fa-solid fa-trash"></i> BORRAR
+        </button>
+      </div>
+    </div>
+  </div>

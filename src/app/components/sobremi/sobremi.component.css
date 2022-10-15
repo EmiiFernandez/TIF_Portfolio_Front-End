@@ -1,0 +1,16 @@
+
+@media (max-width: 1000px) {
+    p {
+        text-align: center !important;
+    }
+
+    .border-seccion {
+        margin-top: 0px;
+    
+        
+    }
+    
+    .padding-top {
+     border-top: 40px solid var(--color-bg-main)
+    }
+}

@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-letra-header: #dfdfdf;
+    --color-detalles: #ff00a5;
+    --color-detalles-secundario: #6c757d;
+    --color-detalles-opacidad: #ff00a6b8;
+    --color-bg-main: #f7f6f5;
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid var(--color-detalles) !important;
+    opacity: 1 !important;
+    margin-top: 0 !important;
+    margin-bottom: 3% !important;
+}
+
+.border-seccion {
+    padding: 2%;
+    margin: 5%;
+    border: 4px solid #e3e2e2;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+}
+
+.border-seccion hr {
+    width: 20%;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+p, label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--color-letra-header);
+    background-color: transparent;
+}
+
+.nav-pills .nav-link.active:hover {
+    color: var(--color-detalles);
+    -webkit-text-stroke: 0.5px var(--color-detalles-secundario);
+}
+
+.nav-item a {
+    font-size: 26px;
+}
+
+li {
+    margin-top: 12px;
+}
+
+a {
+    color: var(--color-letra-header);
+}
+
+.btn-secondary {
+    border: 2px solid var(--color-detalles-secundario) !important;
+    transition: background-color 3s !important;
+    padding: 3px 20px;
+    letter-spacing: 1px;
+}
+
+.btn-secondary:hover{
+    background-color:var(--color-detalles-opacidad) !important;
+}
+
+.redes ul {
+    color: var(--color-letra-header);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.redes i {
+    font-size: 45px;
+}
+
+
+.redes i:hover {
+    color: var(--color-detalles);
+    -webkit-text-stroke: 0.5px var(--color-detalles-secundario);
+}
+
+@media (max-width: 1000px) {
+
+    h4 {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+    
+}

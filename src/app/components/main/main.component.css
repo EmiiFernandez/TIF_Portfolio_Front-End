@@ -1,0 +1,13 @@
+.main-area {
+    background-color: var(--color-bg-main) ;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    app-boton-login {
+        display: none;
+    }
+    
+}
