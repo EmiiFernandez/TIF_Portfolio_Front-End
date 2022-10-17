@@ -1,38 +1,41 @@
-<div class="skills-area">
-  <h4 id="list-item-2">Hard & Soft Skills</h4>
-  <div class="col-lg-2">
-    <button
-      type="button"
-      routerLink="/newskill"
-      class="btn btn-dark"
-      *ngIf="isLogged"
-    >
-      Nueva Skill
-    </button>
-  </div>
-  <hr />
-  <div *ngFor="let skill of skill">
-    <h5>{{ skill.nombreS }}</h5>
-    <p>
-      <ngb-progressbar
-        [value]="skill.porcentajeS"
-        [striped]="true"
-        [animated]="true"
-        type="info"
-      ></ngb-progressbar>
-    </p>
 
-    <div>
-      <td *ngIf="isLogged">
-        <button class="btn btn-light" routerLink="/editskill/{{ skill.id }}">
-          <i class="bi bi-pencil-fill"></i>
+<div class="border-seccion">
+    <h4 id="list-item-3">Skills</h4>
+  
+    <div class="col-lg-6">
+      <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">
+        Agregar nueva skill
+      </button>
+    </div>
+  
+    <hr />
+  
+    <div *ngFor="let skill of skill">
+      <div class="card text-center">
+        <div class="card-body">
+            <h5>{{skill.nombreS }}</h5>
+            <p>
+              <ngb-progressbar
+                [value]="skill.porcentajeS"
+                [striped]="true"
+                [animated]="true"
+                type="info"
+              ></ngb-progressbar>
+            </p>
+  
+      </div>
+  
+      <div *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+          <i class="fa-regular fa-pen-to-square"></i> EDITAR
         </button>
-      </td>
-      <td *ngIf="isLogged">
+      </div>
+  
+      <div *ngIf="isLogged">
         <button class="btn btn-danger" (click)="delete(skill.id)">
-          <i class="bi bi-trash-fill"></i>
+          <i class="fa-solid fa-trash"></i> BORRAR
         </button>
-      </td>
+      </div>
     </div>
   </div>
-</div>
+ 
