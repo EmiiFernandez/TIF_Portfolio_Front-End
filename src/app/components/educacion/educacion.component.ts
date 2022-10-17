@@ -29,7 +29,7 @@ export class EducacionComponent implements OnInit {
     this.educacionService.lista().subscribe(data => { this.educacion = data; })
   }
 
-  delete(id?: number){
+  delete(id: number){
     if(id != undefined){
       this.educacionService.delete(id).subscribe(
         data => {

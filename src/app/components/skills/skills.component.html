@@ -1,0 +1,38 @@
+<div class="skills-area">
+  <h4 id="list-item-2">Hard & Soft Skills</h4>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      routerLink="/newskill"
+      class="btn btn-dark"
+      *ngIf="isLogged"
+    >
+      Nueva Skill
+    </button>
+  </div>
+  <hr />
+  <div *ngFor="let skill of skill">
+    <h5>{{ skill.nombreS }}</h5>
+    <p>
+      <ngb-progressbar
+        [value]="skill.porcentajeS"
+        [striped]="true"
+        [animated]="true"
+        type="info"
+      ></ngb-progressbar>
+    </p>
+
+    <div>
+      <td *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/editskill/{{ skill.id }}">
+          <i class="bi bi-pencil-fill"></i>
+        </button>
+      </td>
+      <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(skill.id)">
+          <i class="bi bi-trash-fill"></i>
+        </button>
+      </td>
+    </div>
+  </div>
+</div>

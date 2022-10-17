@@ -12,7 +12,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 import { SobremiComponent } from './components/sobremi/sobremi.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
-import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { LinksRedesComponent } from './components/links-redes/links-redes.component';
 import { LinksSeccionesComponent } from './components/links-secciones/links-secciones.component';
@@ -29,10 +28,9 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
-import { SkillsComponent } from './components/components/skills/skills.component';
-import { NewSkillsComponent } from './components/components/new-skills.component';
-import { EditSkillsComponent } from './components/components/edit-skills.component';
-
+import { SkillsComponent } from './components/skills/skills.component';
+import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +40,6 @@ import { EditSkillsComponent } from './components/components/edit-skills.compone
     PerfilUsuarioComponent,
     SobremiComponent,
     ProyectoComponent,
-    HabilidadesComponent,
     ContactoComponent,
     LinksRedesComponent,
     LinksSeccionesComponent,
@@ -58,8 +55,8 @@ import { EditSkillsComponent } from './components/components/edit-skills.compone
     NeweducacionComponent,
     EditeducacionComponent,
     SkillsComponent,
-    NewSkillsComponent,
-    EditSkillsComponent,
+    NewSkillComponent,
+    EditSkillComponent,
   ],
   imports: [
     BrowserModule,
