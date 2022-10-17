@@ -27,7 +27,5 @@ export const interceptorProvider = [{
     useClass: InterceptorService,
     multi: true
 }];
-function Injetctable(arg0: { providedIn: string; }) {
-    throw new Error("Function not implemented.");
-}
+
 
