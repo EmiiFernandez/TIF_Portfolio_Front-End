@@ -13,7 +13,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
   //'http://localhost:8090/auth/'
-  URL = 'http://localhost:8090/' + 'auth/';
+  URL = 'https://backef.herokuapp.com/' + 'auth/';
   
   constructor(private httpClient: HttpClient) { }
 
