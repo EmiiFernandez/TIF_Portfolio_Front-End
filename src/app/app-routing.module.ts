@@ -9,16 +9,20 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto.compo
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditsobremiComponent } from './components/sobremi/editsobremi.component';
+import { NewsobremiComponent } from './components/sobremi/newsobremi.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'newproy', component: NewProyectoComponent},
-  {path: 'editproy/:id', component: EditProyectoComponent},
-  {path: 'neweduc', component: NeweducacionComponent},
-  {path: 'editeduc/:id', component: EditeducacionComponent },
-  {path: 'newskil/', component: NewSkillComponent},
-  {path: 'editskil/:id', component: EditSkillComponent },
+  {path: 'newproyecto', component: NewProyectoComponent},
+  {path: 'editproyecto/:id', component: EditProyectoComponent},
+  {path: 'neweducacion', component: NeweducacionComponent},
+  {path: 'editeducacion/:id', component: EditeducacionComponent },
+  {path: 'newskill/', component: NewSkillComponent},
+  {path: 'editskill/:id', component: EditSkillComponent },
+  {path: 'newsobremi/', component: NewsobremiComponent},
+  {path: 'editsobremi/:id', component: EditsobremiComponent}
 ];
 
 @NgModule({

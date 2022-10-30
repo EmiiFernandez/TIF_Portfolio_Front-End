@@ -1,17 +1,30 @@
-<div class = "padding-top">
 <div class="border-seccion">
-  <h4 id="list-item-1">Sobre mí</h4>
+  <h4 id="list-item-3">Sobre Mi</h4>
+
+  <div class="col-lg-6">
+    <button type="button" class="btn btn-dark" routerLink="/newsobremi" *ngIf="isLogged">
+      Agregar nueva descripción
+    </button>
+  </div>
+
   <hr />
 
-  <p>
-    ¡Hola! Soy Emilia, Web Full-Stack Developer y Óptica Técnica. <br/>
-    Después de 10 años trabajando en el sector de la salud, como óptica, donde conocí grandes profesionales, amigos y, pude crecer personal y profesionalmente, decidí cambiar mi rumbo profesional, por un area en la que siempre estuve interesada. <br>
-    Decidí cambiar mi rumbo profesional e inicie mi formación como Web Full-Stack Developer, con el objetivo de crecer profesionalmente en el area. <br>
-    Me encuentro en constante formación y
-    busco llevar lo aprendido a la práctica.<br />
-    Me gustaría formar parte de proyectos y equipos de trabajo que me permitan
-    desarrollarme tanto personal como profesionalmente y mejorar mis habilidades.
-  </p>
-  
-</div>
+  <div *ngFor="let SobreMi of sobreMi">
+    <div class="card text-center">
+      <div class="card-body">
+        <p class="card-text">{{ SobreMi.descripcionSM }}</p>
+      </div>
+
+    <div *ngIf="isLogged">
+      <button class="btn btn-light" routerLink="/editproy/{{SobreMi.id}}">
+        <i class="fa-regular fa-pen-to-square"></i> EDITAR
+      </button>
+    </div>
+
+    <div *ngIf="isLogged">
+      <button class="btn btn-danger" (click)="delete(SobreMi.id)">
+        <i class="fa-solid fa-trash"></i> BORRAR
+      </button>
+    </div>
+  </div>
 </div>

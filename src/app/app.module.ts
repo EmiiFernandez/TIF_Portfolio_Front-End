@@ -31,6 +31,8 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { SkillsComponent } from './components/skills/skills.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { EditsobremiComponent } from './components/sobremi/editsobremi.component';
+import { NewsobremiComponent } from './components/sobremi/newsobremi.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +59,8 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
     SkillsComponent,
     NewSkillComponent,
     EditSkillComponent,
+    EditsobremiComponent,
+    NewsobremiComponent,
   ],
   imports: [
     BrowserModule,
