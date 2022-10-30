@@ -1,1 +1,16 @@
-<p>editsobremi works!</p>
+<div class ="container" *ngIf="sobreMi">
+    <div class = "row"> 
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+ 
+                <div class = "form-group">
+                    <label for="descripcionP">Descripción </label>
+                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="sobreMi.descripcionSM" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>

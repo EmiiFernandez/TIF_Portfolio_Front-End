@@ -1,1 +1,16 @@
-<p>newsobremi works!</p>
+<div class ="container">
+    <div class = "row"> 
+        <div>
+            <form (ngSubmit)="onCreated()" novalidate #f="ngForm">
+
+                <div class = "form-group">
+                    <label for="descripcionSM">Descripción </label>
+                    <input type="text" class="form-control" id="descripcionSM" name="descripcionSM" [(ngModel)]="descripcionSM" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar
+                </button>
+            </form>
+        </div>
+    </div>
